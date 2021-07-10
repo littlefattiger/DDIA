@@ -9,3 +9,4 @@ This book focus on data intensive system, that means IO is the bound for the sys
 &nbsp;- 2. Simplicity
 &nbsp;- 3. Evolvability
 
+This chapter talk about some big picture and use twitter's design as an example.  It introduce the high level idea and did not dive very deep here.
