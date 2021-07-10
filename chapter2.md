@@ -12,4 +12,4 @@ In this chapter we will look at a range of general-purpose data models for data 
 * Data model -> decided by applicants. How to use data, how complicated the query is, SQL 4 lines VS Graph Queries 29 lines
 * property graph model, Triple-Stores and SPARQL
 
-## Actually, this chapter give us an overview of data modeling, including RMDB, Document model, and graph model, triple stpre model. Some are pretty old, I think it is only serve as an introduction for this chapter.
+## Actually, this chapter give us an overview of data modeling, including RMDB, Document model, and graph model, triple stpre model. Some are pretty old, I think it is only serve as an introduction for this chapter. He also mention query language for different model here.
