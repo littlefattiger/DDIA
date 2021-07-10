@@ -6,4 +6,4 @@ In this chapter we will look at a range of general-purpose data models for data 
 * Using RMDB database, document database(like MongoDB)/ NOSQL. Use Linkedin profile as an example here.
   * RMDB and documnet model, which one to use? Here it talk about the benefit and drawback of different models. The choice of model depends on datas.
   * Schema-on-read is similar to dynamic (runtime) type checking in programming languages, whereas schema-on-write is similar to static (compile-time) type checking.
-* SQL is declaired and some other language is imperative(指令式的）, like SQL. 
+* SQL is declaired and some other language is imperative(指令式的）, like IMS and CODASYL. 
