@@ -8,3 +8,4 @@ In this chapter we will look at a range of general-purpose data models for data 
   * Schema-on-read is similar to dynamic (runtime) type checking in programming languages, whereas schema-on-write is similar to static (compile-time) type checking.
 * SQL is declaired and some other language is imperative(指令式的）, like IMS and CODASYL. 
 * We can have RMDB, document and also can haev graph model. -> Example Cypher for graph to do query.
+* Data model -> decided by applicants. How to use data, how complicated the query is, SQL 4 lines VS Graph Queries 29 lines
