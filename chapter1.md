@@ -5,7 +5,7 @@ This book focus on data intensive system, that means IO is the bound for the sys
 - Reliability
 - Scalability
 - Maintainability
-- 1. Operability
-- 2. Simplicity
-- 3. Evolvability
+&nbsp;- 1. Operability
+&nbsp;- 2. Simplicity
+&nbsp;- 3. Evolvability
 
