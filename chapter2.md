@@ -4,4 +4,4 @@ In this chapter we will look at a range of general-purpose data models for data 
 
 * RMDB VS NoSQl
 * Using RMDB database, document database(like MongoDB)/ NOSQL. Use Linkedin profile as an example here.
-  * The main arguments in favor of the document data model are schema flexibility, better performance due to locality, and that for some applications it is closer to the data structures used by the application. The relational model counters by providing better support for joins, and many-to-one and many-to-many relationships.
+  * RMDB and documnet model, which one to use? Here it talk about the benefit and drawback of different models. The choice of model depends on datas.
