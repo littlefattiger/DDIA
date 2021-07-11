@@ -9,3 +9,8 @@ In this chapter we will look at several formats for encoding data, including JSO
 * Thrift and Protocol Buffer
 * **When I work, I need avro, parquet and redshift in aws**
 * Avro binary encoding format, writer’s schema. reader’s schema
+* Who encodes the data, and who decodes it?
+  * Via databases
+  * Via service calls 
+  * Via asynchronous message passing
+  
