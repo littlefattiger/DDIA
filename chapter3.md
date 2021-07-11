@@ -7,5 +7,5 @@
 * Log-Structured Merge-Tree -> LSM storage. Bloom filters use here to save some time if you want to confirm that key does not exist.
 * B-Tree used for most database. In order to make the database resilient to crashes, it is common for B-tree implemen‐ tations to include an additional data structure on disk: a write-ahead log (WAL, also known as a redo log).
 * Mainly spend several pages to discuss above two index structure.
-* [LSM](https://www.zhihu.com/question/19887265/answer/78839142)
+* [LSM](https://www.zhihu.com/question/19887265/answer/78839142) explaination from zhihu
 
