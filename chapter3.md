@@ -8,4 +8,10 @@
 * B-Tree used for most database. In order to make the database resilient to crashes, it is common for B-tree implemen‐ tations to include an additional data structure on disk: a write-ahead log (WAL, also known as a redo log).
 * Mainly spend several pages to discuss above two index structure.
 * [LSM](https://www.zhihu.com/question/19887265/answer/78839142) explaination from zhihu
+* On a high level, we saw that storage engines fall into two broad categories: those opti‐ mized for transaction processing (OLTP), and those optimized for analytics (OLAP).
+* OLTP Disk seek time is often the bottleneck here.usually only touch a small number of records in each query(Applied the index mentioned above)
+* OLAP Disk bandwidth (not seek time) is often the bottleneck here, and column- oriented storage is an increasingly popular solution for this kind of workload. requiring many millions of records to be scanned in a short time
+* OLTP 
+  * The log-structured school, which only permits appending to files and deleting obsolete files, but never updates a file that has been written.
+  * The update-in-place school, which treats the disk as a set of fixed-size pages that can be overwritten. B-trees are the biggest example of this philosophy
 
