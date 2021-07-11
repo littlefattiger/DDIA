@@ -14,4 +14,4 @@
 * OLTP 
   * The log-structured school, which only permits appending to files and deleting obsolete files, but never updates a file that has been written.
   * The update-in-place school, which treats the disk as a set of fixed-size pages that can be overwritten. B-trees are the biggest example of this philosophy
-
+* also mention some database in memory like redis.
