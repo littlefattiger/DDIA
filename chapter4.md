@@ -5,3 +5,4 @@ In this chapter we will look at several formats for encoding data, including JSO
 * Data In memory
 * When you want to write data to a file or send it over the network, you have to encode it as some kind of self-contained sequence of bytes
 * The transation from the in-memory representation to a byte sequence is called encoding (also known as serialization or marshalling), and the reverse is called decoding (parsing, deserialization, unmarshalling) 
+* JSON, XML, and Binary Variants
