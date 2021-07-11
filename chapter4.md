@@ -8,4 +8,4 @@ In this chapter we will look at several formats for encoding data, including JSO
 * JSON, XML, and Binary Variants
 * Thrift and Protocol Buffer
 * **When I work, I need avro, parquet and redshift in aws"**
-* Avro binary encoding format 
+* Avro binary encoding format, writer’s schema. reader’s schema
