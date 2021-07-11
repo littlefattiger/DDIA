@@ -5,4 +5,4 @@
 * Hash Indexes. Put the index in memory. Merge it later for different segments. -> compaction process.
 * Sorted String Table -> key-value pairs is sorted by key. memtable -> disk.
 * Log-Structured Merge-Tree -> LSM storage. Bloom filters use here to save some time if you want to confirm that key does not exist.
-* 
+* B-Tree used for most database. In order to make the database resilient to crashes, it is common for B-tree implemen‐ tations to include an additional data structure on disk: a write-ahead log (WAL, also known as a redo log).
