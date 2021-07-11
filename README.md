@@ -1,5 +1,5 @@
-# DDIA
+# 读书笔记 for Designing Data-Intensive Applications
 
-This is a reading record for my DDIA reading Designing Data-Intensive Applications
+
            
            
