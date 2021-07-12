@@ -6,3 +6,4 @@ This chapter mainly talk about different type of replications.
 * leaderless model
 * The general idea is about reduce latency, data outdated.
 * eventually consistent?
+* Whether one operation happens before another operation is the key to defining what concurrency means. 
