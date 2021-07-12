@@ -9,3 +9,5 @@
   * How not to do it: hash mod N
   * create many more partitions than there are nodes 
   * Dynamic partitioning
+  * Operations: Automatic or Manual Rebalancing
+* For example, LinkedIn’s Espresso uses Helix [31] for cluster management (which in turn relies on ZooKeeper), implementing a routing tier as shown in Figure 6-8. HBase, SolrCloud, and Kafka also use ZooKeeper to track partition assignment.
