@@ -6,3 +6,5 @@
 * document-partitioned secondary indexes
 * Partitioning Secondary Indexes by Term
 * Strategies for Rebalancing
+  * How not to do it: hash mod N
+  * create many more partitions than there are nodes 
