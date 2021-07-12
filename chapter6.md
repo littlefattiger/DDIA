@@ -5,3 +5,4 @@
   * Partitioning by Hash of Key
 * document-partitioned secondary indexes
 * Partitioning Secondary Indexes by Term
+* Strategies for Rebalancing
