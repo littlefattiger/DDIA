@@ -1,5 +1,6 @@
 import argparse
 import ast
+import os
 from pathlib import Path
 from collections import namedtuple
 
@@ -17,7 +18,9 @@ def init_args(argv=None):
 def get_imports_for_file(file):
     with open(file) as fh:        
        root = ast.parse(fh.read(), file)
-    
+    if file == str(os.path.dirname(os.path.abspath(__file__))) + '/' + 'Get_Module_for_all_files.py':
+        return set()
+        
     modules_list_tuple = []
 
     for node in ast.iter_child_nodes(root):
@@ -43,18 +46,16 @@ def get_imports_for_file(file):
 
 def get_imports_from_path(path):
 
-    # Get all python files for that path, exclude this file
+    # Get all python files for that path
     all_py_files = [str(py_file.absolute()) for py_file in Path(path).glob('**/*') if str(py_file.absolute()).endswith('.py') ]
-    current_py_name = str(Path(__file__))
-    if  current_py_name in all_py_files:
-        all_py_files.remove(current_py_name)
-    
+
     modules_set_in_list = [
         get_imports_for_file(py_file_name)
         for py_file_name in all_py_files
     ]
     # Put the result in set to remove duplicate modules
     return list(set().union(*modules_set_in_list))
+
 
 def run():
     args = init_args()
@@ -65,6 +66,7 @@ def run():
     print(all_distinct_modules)
     print("\n")
     return 
+
 
 if __name__ == "__main__": 
     run()
