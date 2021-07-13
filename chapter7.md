@@ -10,3 +10,7 @@ The Meaning of ACID: **atomicity, consistency, isolation, and durability**. ever
 * write skew 
 * materializing conflicts should be considered a last resort if no alternative is possible. A serializable isolation level is much preferable in most cases.
 
+* Serializability
+  * Literally executing transactions in a serial order (see “Actual Serial Execution” on page 252)
+  * Two-phase locking (see “Two-Phase Locking (2PL)” on page 257), which for sev‐ eral decades was the only viable option
+  * Optimistic concurrency control techniques such as serializable snapshot isolation (see “Serializable Snapshot Isolation (SSI)” on page 261)
