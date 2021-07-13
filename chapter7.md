@@ -7,3 +7,5 @@ The Meaning of ACID: **atomicity, consistency, isolation, and durability**. ever
 
 * Locks and compare-and-set operations assume that there is a single up-to-date copy of the data. 
 * write skew 
+* materializing conflicts should be considered a last resort if no alternative is possible. A serializable isolation level is much preferable in most cases.
+
