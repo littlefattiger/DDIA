@@ -5,3 +5,4 @@ A transaction is a way for an application to group several reads and writes toge
 
 The Meaning of ACID: **atomicity, consistency, isolation, and durability**. everything between a BEGIN TRANSACTION and a COMMIT statement is considered to be part of the same transaction
 
+* Locks and compare-and-set operations assume that there is a single up-to-date copy of the data. 
