@@ -8,3 +8,5 @@ This chapter covers a broad range of topics, but as we shall see, these areas ar
 * We will start by looking at one of the strongest consistency models in common use, linearizability, and examine its pros and cons.
 * We’ll then examine the issue of ordering events in a distributed system, particularly around causality and total ordering.
 * In the third section we will explore how to atomically commit a distributed transaction, which will finally lead us toward solutions for the consensus problem.
+
+linearizability essentially means “behave as though there is only a single copy of the data, and all operations on it are atomic”
