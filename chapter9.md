@@ -10,5 +10,6 @@ This chapter covers a broad range of topics, but as we shall see, these areas ar
   * Lamport timestamps 
   * This is no coincidence: it can be proved that a linearizable compare-and-set egister and total order broadcast are both equivalent to consensus
 * In the third section we will explore how to atomically commit a distributed transaction, which will finally lead us toward solutions for the consensus problem.
+ * two-phase commit 
 
 linearizability essentially means “behave as though there is only a single copy of the data, and all operations on it are atomic”
