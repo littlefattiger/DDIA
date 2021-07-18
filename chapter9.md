@@ -15,3 +15,5 @@ This chapter covers a broad range of topics, but as we shall see, these areas ar
 linearizability essentially means “behave as though there is only a single copy of the data, and all operations on it are atomic”
 
 Consensus algorithms and total order broadcast
+
+ZooKeeper and etcd are designed to hold small amounts of data that can fit entirely in memory
