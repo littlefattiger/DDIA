@@ -10,3 +10,4 @@ Messaging Systems
 * At the beginning of “Messaging Systems” on page 441 we discussed three choices of what to do if a consumer cannot keep up with the rate at which producers are send‐ ing messages: dropping messages, buffering, or applying backpressure. In this taxon‐ omy, the log-based approach is a form of buffering with a large but fixed-size buffer
 * CDC(change data capture) -> update database -> update search index
 * Event Sourcing
+* Think about the immutuable log and final state.
