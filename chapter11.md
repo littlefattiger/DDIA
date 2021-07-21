@@ -11,3 +11,5 @@ Messaging Systems
 * CDC(change data capture) -> update database -> update search index
 * [Event Sourcing](https://zhuanlan.zhihu.com/p/38968012)
 * Think about the immutuable log and final state.
+* This idea is sometimes known as command query responsibility segregation (CQRS)
+* The traditional approach to database and schema design is based on the fallacy that data must be written in the same form as it will be queried.
