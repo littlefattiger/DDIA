@@ -5,3 +5,4 @@ We can use database, this is what batch job done. However, instead, it is better
 Messaging Systems
 * something like database? No notification function
 * with broker.
+* Apache Kafka, Amazon Kinesis Streams, log basis message queue.
