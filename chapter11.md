@@ -17,3 +17,7 @@ Messaging Systems
   1. You can take the data in the events and write it to a database, cache, search index, or similar storage system, from where it can then be queried by other clients.
   2. You can push the events to users in some way, for example by sending email alerts or push notifications, or by streaming the events to a real-time dashboard where they are visualized. 
   3. You can process one or more input streams to produce one or more output streams. Streams may go through a pipeline consisting of several such processing stages before they eventually end up at an output (option 1 or 2).   
+Stream Joins
+* Stream-stream join (window join)
+* Stream-table join (stream enrichment)
+* Table-table join (materialized view maintenance)
