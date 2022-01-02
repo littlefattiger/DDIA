@@ -2,13 +2,15 @@
   - Distributed file storing system
 3. Zookeeper
 4. Hive
-5. Flume
-6. Hbase
+    - HDFS based data warehouse 
+6. Flume
+7. Hbase
 
 ### Message Queue
 1. Kafka
-2. Flink
-3. Spark Stream
+    - producer, consumer
+3. Flink
+4. Spark Stream
 
 
 ### Scheduler
