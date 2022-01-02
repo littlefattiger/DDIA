@@ -6,9 +6,10 @@
 6. Hbase
 7. Kafka
 ### Scheduler
-
+[Ref](https://www.jdon.com/workflow/Airflow-vs-Azkaban-vs-Conductor-vs-Oozie-vs-Amazon-Step-Functions.html)
 1. Azkaban3.x
-  2. Using Yaml file 
+  - Using Yaml file 
 3. Oozie
-4. Airflow
-  4. Using Python flask 
+  - Using XML file
+5. Airflow
+  - Using Python flask 
