@@ -4,7 +4,9 @@
 4. Hive
     - HDFS based SQL data warehouse 
 6. Flume
-7. Hbase
+    - Log collector: Linux system -> HDFS
+    - Different destination: Flume -> Kafka
+8. Hbase
     - HDFS based NoSQL database
 
 ### Message Queue
