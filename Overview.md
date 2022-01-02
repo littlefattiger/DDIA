@@ -4,7 +4,13 @@
 4. Hive
 5. Flume
 6. Hbase
-7. Kafka
+
+### Message Queue
+1. Kafka
+2. Flink
+3. Spark Stream
+
+
 ### Scheduler
 [Ref](https://www.jdon.com/workflow/Airflow-vs-Azkaban-vs-Conductor-vs-Oozie-vs-Amazon-Step-Functions.html)
 1. Azkaban3.x
