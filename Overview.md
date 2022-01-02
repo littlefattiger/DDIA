@@ -5,5 +5,10 @@
 5. Flume
 6. Hbase
 7. Kafka
-8. Azkaban3.x
-9. Oozie
+### Scheduler
+
+1. Azkaban3.x
+  2. Using Yaml file 
+3. Oozie
+4. Airflow
+  4. Using Python flask 
