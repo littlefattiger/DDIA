@@ -1,7 +1,11 @@
 1. Hadoop
-  - Distributed file storing system
+    - Distributed file storing system
 3. Zookeeper
-4. Hive
+    - This is distributed linux like file system
+    - It used CP out of CAP
+    - It will help Kafka and Hive
+    - Using ZAP protocal/I think it is similar to paxos and raft
+5. Hive
     - HDFS based SQL data warehouse 
 6. Flume
     - Log collector: Linux system -> HDFS
