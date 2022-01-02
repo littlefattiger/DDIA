@@ -1,3 +1,3 @@
-# 读书笔记
+# Review after reading
 ---
-这里会放我读的书写的一些自己看的笔记，方便以后复习
+To summarize info for what I read
