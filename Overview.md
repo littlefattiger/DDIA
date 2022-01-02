@@ -8,8 +8,8 @@
 ### Scheduler
 [Ref](https://www.jdon.com/workflow/Airflow-vs-Azkaban-vs-Conductor-vs-Oozie-vs-Amazon-Step-Functions.html)
 1. Azkaban3.x
-  - Using Yaml file 
-3. Oozie
-  - Using XML file
-5. Airflow
-  - Using Python flask 
+    - Using Yaml file 
+2. Oozie
+    - Using XML file
+3. Airflow
+    - Using Python flask 
