@@ -2,9 +2,10 @@
   - Distributed file storing system
 3. Zookeeper
 4. Hive
-    - HDFS based data warehouse 
+    - HDFS based SQL data warehouse 
 6. Flume
 7. Hbase
+    - HDFS based NoSQL database
 
 ### Message Queue
 1. Kafka
