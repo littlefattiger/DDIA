@@ -1,6 +1,5 @@
 1. Hadoop
-  1. Distributed file storing system
-  
+  - Distributed file storing system
 3. Zookeeper
 4. Hive
 5. Flume
