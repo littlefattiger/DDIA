@@ -1,5 +1,6 @@
 1. Hadoop
     - Distributed file storing system
+    - Learned 3.13
 3. Zookeeper
     - This is distributed linux like file system
     - It used CP out of CAP
