@@ -23,8 +23,9 @@
 4. Spark Stream
 
 
-### Scheduler
+### Scheduler and coordinator
 [Ref](https://www.jdon.com/workflow/Airflow-vs-Azkaban-vs-Conductor-vs-Oozie-vs-Amazon-Step-Functions.html)
+This part is easy. The most based scheduler is crontab from linux but it can not solve the dependency problem. Then we have the follow one. We can think them as a alternative for cron.
 1. Azkaban3.x
     - Using Yaml file 
 2. Oozie
