@@ -7,6 +7,8 @@
     - Using ZAP protocal/I think it is similar to paxos and raft
 5. Hive
     - HDFS based SQL data warehouse 
+    - Compector is presto. Presto use within athena in S3.
+    - Hive is more like a MR optimizer. You write SQL code and you will get a result from HDFS, no need to write JAVA code to do so. SQL is easy.
 6. Flume
     - Log collector: Linux system -> HDFS
     - Different destination: Flume -> Kafka
