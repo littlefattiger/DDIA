@@ -15,6 +15,7 @@
     - Different destination: Flume -> Kafka
 8. Hbase
     - HDFS based NoSQL database
+    - compact and split
 
 ### Message Queue
 1. Kafka
