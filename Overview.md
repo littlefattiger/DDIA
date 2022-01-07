@@ -16,7 +16,11 @@
 8. Hbase
     - HDFS based NoSQL database
     - compact and split
-
+9. Scala
+    - Very similar to Java
+    - functional language
+    - OOP
+11. Spark
 ### Message Queue
 1. Kafka
     - producer, consumer
