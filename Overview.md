@@ -21,6 +21,9 @@
     - functional language
     - OOP
 11. Spark
+12. Atlas
+    - metadata manage
+    - Variable dictionary
 ### Message Queue
 1. Kafka
     - producer, consumer
