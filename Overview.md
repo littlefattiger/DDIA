@@ -25,7 +25,9 @@
     - metadata manage
     - Variable dictionary
     - Table lineage/dependency
-13. Prometheus+Grafana+ruixiang cloud. It is similar to Datadog + slack
+12. Kylin
+    - no idea now
+14. Prometheus+Grafana+ruixiang cloud. It is similar to Datadog + slack
     - this set is just for alerting. We can integrate the alert system with slack and pageduty
 ### Message Queue
 1. Kafka
