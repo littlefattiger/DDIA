@@ -31,7 +31,7 @@
 14. Prometheus+Grafana+ruixiang cloud. It is similar to Datadog + slack
     - this set is just for alerting. We can integrate the alert system with slack and pageduty
 ### Data Sync
-1. sqoop
+1. sqoop: HDFS <-> RDS
 2. Datax
 ### Message Queue
 1. Kafka
