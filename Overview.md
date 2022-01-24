@@ -32,7 +32,7 @@
     - this set is just for alerting. We can integrate the alert system with slack and pageduty
 ### Data Sync
 1. sqoop: HDFS <-> RDS
-2. Datax
+2. Datax: All different data source; Sync all together
 ### Message Queue
 1. Kafka
     - producer, consumer
