@@ -27,6 +27,7 @@
     - Table lineage/dependency
 12. Kylin
     - similar to **presto**. Presto is to put stuff into memory Kylin is to pre-calculate
+    - Think it similar as presto and hive. It is OLAP query engine.
 14. Prometheus+Grafana+ruixiang cloud. It is similar to Datadog + slack
     - this set is just for alerting. We can integrate the alert system with slack and pageduty
 ### Message Queue
