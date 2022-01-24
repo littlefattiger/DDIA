@@ -26,7 +26,7 @@
     - Variable dictionary
     - Table lineage/dependency
 12. Kylin
-    - no idea now
+    - similar to **presto**
 14. Prometheus+Grafana+ruixiang cloud. It is similar to Datadog + slack
     - this set is just for alerting. We can integrate the alert system with slack and pageduty
 ### Message Queue
