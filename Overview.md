@@ -22,14 +22,15 @@
     - OOP
 11. Spark
 12. ClickHouse - OLAP database
-13. Atlas
+    - from Russian
+14. Atlas
     - metadata manage
     - Variable dictionary
     - Table lineage/dependency
-14. Kylin
+15. Kylin
     - similar to **presto**. Presto is to put stuff into memory Kylin is to pre-calculate
     - Think it similar as presto and hive. It is OLAP query engine.
-15. Prometheus+Grafana+ruixiang cloud. It is similar to Datadog + slack
+16. Prometheus+Grafana+ruixiang cloud. It is similar to Datadog + slack
     - this set is just for alerting. We can integrate the alert system with slack and pageduty
 ### Data Sync
 1. sqoop: HDFS <-> RDS
