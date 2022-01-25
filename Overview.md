@@ -21,7 +21,7 @@
     - functional language
     - OOP
 11. Spark
-12. ClickHouse
+12. ClickHouse - OLAP database
 13. Atlas
     - metadata manage
     - Variable dictionary
