@@ -16,6 +16,7 @@
 8. Hbase
     - HDFS based NoSQL database
     - compact and split
+    - Know about the cluster and its definition
 9. Scala
     - Very similar to Java
     - functional language
