@@ -16,7 +16,13 @@
 8. Hbase
     - HDFS based NoSQL database
     - compact and split
-    - Know about the cluster and its definition
+    - Know about the family and its qualifier. 
+    - Column Family and Column Qualifier -> column
+    - RowKey -Key
+    - Name Space -> schema
+    - Region -> table
+    - Time Stamp  is used by Hbase compact(deduped).
+    - Cell is defined by {rowkey, column Family：column Qualifier, time Stamp}
 9. Scala
     - Very similar to Java
     - functional language
