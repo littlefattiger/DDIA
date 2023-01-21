@@ -11,3 +11,8 @@
   * Dynamic partitioning
   * Operations: Automatic or Manual Rebalancing
 * For example, LinkedIn’s Espresso uses Helix [31] for cluster management (which in turn relies on ZooKeeper), implementing a routing tier as shown in Figure 6-8. HBase, SolrCloud, and Kafka also use ZooKeeper to track partition assignment.
+* Request Routing
+  * Allow clients to contact any node
+  * Send all requests from clients to a routing tier first, which determines the node that should handle each request and forwards it accordingly
+  * Require that clients be aware of the partitioning and the assignment of partitions to nodes
+  * 2nd is just like using zookeeper
