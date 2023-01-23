@@ -17,6 +17,7 @@ Automatically detecting lost updates
   * An alternative is to allow them to execute in parallel and, if the transaction manager detects a lost update, abort the transaction and force it to retry its read-modify-write cycle Lost update detection is a great feature, because it doesn’t require application code to use any special database features—you may forget to use a lock or an atomic opera‐ tion and thus introduce a bug, but lost update detection happens automatically and is thus less error-prone ->Automatically detecting lost updates
     * Compare-and-set
     * Conflict resolution and replication -> Allow conflict and concurrent write because of its multiple leader/leaderless
+    * On the other hand, the last write wins (LWW) conflict resolution method is prone to lost update. Unfortunately, LWW is the default in many replicated databases.
 
 write skew 
 * materializing conflicts should be considered a last resort if no alternative is possible. A serializable isolation level is much preferable in most cases.
