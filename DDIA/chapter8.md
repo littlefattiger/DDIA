@@ -5,6 +5,13 @@ Yes, this chapter mainly talk about what may go wrong and how it may go wrong.
 
 If we want to make distributed systems work, we must accept the possibility of partial failure and build fault-tolerance mechanisms into the software. In other words, we need to build a reliable system from unreliable components.
 
+* We will look into problems with networks; 
+* clocks and timing issues. 
+* We’ll discuss to what degree they are avoidable. The consequences of all these issues are disorienting, so we’ll explore how to think about the state of a dis‐
+tributed system and how to reason about things that have happened (“Knowledge,Truth, and Lies” on page 300).
+
+
+
 Several ways of fault, including: 
 * Whenever you try to send a packet over the network, it may be lost or arbitrarily delayed.
 * A node’s clock may be significantly out of sync with other nodes, it may suddenly jump forward or back in time, and relying on it is dangerous because you most likely don’t have a good measure of your clock’s error interval.
