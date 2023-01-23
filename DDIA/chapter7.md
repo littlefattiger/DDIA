@@ -22,7 +22,7 @@ Automatically detecting lost updates
 Write skew 
 * What is write skew? This anomaly is called write skew [28]. It is neither a dirty write nor a lost update, because the two transactions are updating two different objects
 * This effect, where a write in one transaction changes the result of a search query in another transaction, is called a phantom [3]. Snapshot isolation avoids phantoms in read-only queries, but in read-write transactions like the examples we discussed, phantoms can lead to particularly tricky cases of write skew
-* materializing conflicts should be considered a last resort if no alternative is possible. A serializable isolation level is much preferable in most cases.
+* materializing conflicts should be considered a last resort if no alternative is possible. A serializable isolation level is much preferable in most cases. -> The action here is to use a thrid fake table to materia the conflict
 
 Serializability
   * Literally executing transactions in a serial order (see “Actual Serial Execution” on page 252)
