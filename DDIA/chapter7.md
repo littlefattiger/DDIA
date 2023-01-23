@@ -20,6 +20,7 @@ Automatically detecting lost updates
     * On the other hand, the last write wins (LWW) conflict resolution method is prone to lost update. Unfortunately, LWW is the default in many replicated databases.
 
 Write skew 
+* What is write skew? This anomaly is called write skew [28]. It is neither a dirty write nor a lost update, because the two transactions are updating two different objects 
 * materializing conflicts should be considered a last resort if no alternative is possible. A serializable isolation level is much preferable in most cases.
 
 * Serializability
