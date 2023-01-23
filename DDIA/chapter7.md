@@ -19,7 +19,7 @@ Automatically detecting lost updates
     * Conflict resolution and replication -> Allow conflict and concurrent write because of its multiple leader/leaderless
     * On the other hand, the last write wins (LWW) conflict resolution method is prone to lost update. Unfortunately, LWW is the default in many replicated databases.
 
-write skew 
+Write skew 
 * materializing conflicts should be considered a last resort if no alternative is possible. A serializable isolation level is much preferable in most cases.
 
 * Serializability
