@@ -14,8 +14,9 @@ Week Isolation levels
     * Atomic write operations -> Need to have this function
     * Explicit locking -> the application can perform a read-modify-write cycle, and if any other transaction tries to concurrently read the same object, it is forced to wait until the first read-modify-write cycle has completed
 Automatically detecting lost updates
-  * Compare-and-set
-  * Conflict resolution and replication
+  * An alternative is to allow them to execute in parallel and, if the transaction manager detects a lost update, abort the transaction and force it to retry its read-modify-write cycle Lost update detection is a great feature, because it doesn’t require application code to use any special database features—you may forget to use a lock or an atomic opera‐ tion and thus introduce a bug, but lost update detection happens automatically and is thus less error-prone ->Automatically detecting lost updates
+    * Compare-and-set
+    * Conflict resolution and replication
 
 write skew 
 * materializing conflicts should be considered a last resort if no alternative is possible. A serializable isolation level is much preferable in most cases.
