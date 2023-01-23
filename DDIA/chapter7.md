@@ -32,3 +32,7 @@ Read committed and snapshot isolation levels can solve some problem, but not all
     *  In 2PL, writers don’t just block other writers; they also block readers and vice versa. Snapshot isolation has the mantra readers never block writers, and writers never block readers, which captures this key difference between snapshot isolation and two-phase locking. On the other hand, because 2PL provides serializability, it protects against all the race conditions dis‐ cussed earlier, including lost updates and write skew
     *  Index-range locks use most
   * Serializable Snapshot Isolation (SSI) has the possibility of being fast enough to become the new default in the future. -> optimistic concurrency control; Two-phase locking is a so-called pessimistic concurrency control mechanism
+    *  Detecting reads of a stale MVCC object version (uncommitted write occurred before the read)
+    *  Detecting writes that affect prior reads (the write occurs after the read)
+
+
