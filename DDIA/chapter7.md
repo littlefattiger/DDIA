@@ -20,10 +20,11 @@ Automatically detecting lost updates
     * On the other hand, the last write wins (LWW) conflict resolution method is prone to lost update. Unfortunately, LWW is the default in many replicated databases.
 
 Write skew 
-* What is write skew? This anomaly is called write skew [28]. It is neither a dirty write nor a lost update, because the two transactions are updating two different objects 
+* What is write skew? This anomaly is called write skew [28]. It is neither a dirty write nor a lost update, because the two transactions are updating two different objects
+* This effect, where a write in one transaction changes the result of a search query in another transaction, is called a phantom [3]. Snapshot isolation avoids phantoms in read-only queries, but in read-write transactions like the examples we discussed, phantoms can lead to particularly tricky cases of write skew
 * materializing conflicts should be considered a last resort if no alternative is possible. A serializable isolation level is much preferable in most cases.
 
-* Serializability
+Serializability
   * Literally executing transactions in a serial order (see “Actual Serial Execution” on page 252)
   * Two-phase locking (see “Two-Phase Locking (2PL)” on page 257), which for sev‐ eral decades was the only viable option
   * Optimistic concurrency control techniques such as serializable snapshot isolation (see “Serializable Snapshot Isolation (SSI)” on page 261)
