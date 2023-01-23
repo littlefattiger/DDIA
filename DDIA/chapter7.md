@@ -27,4 +27,6 @@ Write skew
 Read committed and snapshot isolation levels can solve some problem, but not all. -> Before is week isolation-> use serializable isolation. Serializable isolation is usually regarded as the strongest isolation level -> the database prevents all possible race conditions -> Current chapter, we mainly talk about single node level. They used mainly these 3 ways:
   * Literally executing transactions in a serial order -> a single-threaded loop -> stored procedures: book tickets and only submit once with all transactions
   * For around 30 years, there was only one widely used algorithm for serializability in databases: two-phase locking (2PL) -> not 2PC, which for sev‐ eral decades was the only viable option
+    *  If transaction A has read an object and transaction B wants to write to that object, B must wait until A commits or aborts before it can continue. (This ensures that B can’t change the object unexpectedly behind A’s back.)
+    *  If transaction A has written an object and transaction B wants to read that object, B must wait until A commits or aborts before it can continue. (Reading an old version of the object, like in Figure 7-1, is not acceptable under 2PL.)
   * Optimistic concurrency control techniques such as serializable snapshot isolation (see “Serializable Snapshot Isolation (SSI)” on page 261)
