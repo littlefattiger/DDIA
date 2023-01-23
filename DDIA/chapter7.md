@@ -24,7 +24,7 @@ Write skew
 * This effect, where a write in one transaction changes the result of a search query in another transaction, is called a phantom [3]. Snapshot isolation avoids phantoms in read-only queries, but in read-write transactions like the examples we discussed, phantoms can lead to particularly tricky cases of write skew
 * materializing conflicts should be considered a last resort if no alternative is possible. A serializable isolation level is much preferable in most cases. -> The action here is to use a thrid fake table to materia the conflict
 
-Read committed and snapshot isolation levels can solve some problem, but not all. -> Before is week isolation-> use serializable isolation
+Read committed and snapshot isolation levels can solve some problem, but not all. -> Before is week isolation-> use serializable isolation. Serializable isolation is usually regarded as the strongest isolation level
   * Literally executing transactions in a serial order (see “Actual Serial Execution” on page 252)
   * Two-phase locking (see “Two-Phase Locking (2PL)” on page 257), which for sev‐ eral decades was the only viable option
   * Optimistic concurrency control techniques such as serializable snapshot isolation (see “Serializable Snapshot Isolation (SSI)” on page 261)
