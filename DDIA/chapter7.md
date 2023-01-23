@@ -11,8 +11,8 @@ Week Isolation levels
   * Read commit -> no dirty read and no dirty write
   * Snapshot isolation and repeatable read -> have a snapshot and it can do multiple read without any issue
   * prevent lost update -> two updates together, one may loss
-    * Atomic write operations
-    * Explicit locking
+    * Atomic write operations -> Need to have this function
+    * Explicit locking -> the application can perform a readmodify-write cycle, and if any other transaction tries to concurrently read the same object, it is forced to wait until the first read-modify-write cycle has completed
 Automatically detecting lost updates
   * Compare-and-set
   * Conflict resolution and replication
