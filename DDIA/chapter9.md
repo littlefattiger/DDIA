@@ -17,3 +17,10 @@ linearizability essentially means “behave as though there is only a single cop
 Consensus algorithms and total order broadcast
 
 ZooKeeper and etcd are designed to hold small amounts of data that can fit entirely in memory
+
+Usage of ZooKeeper tools:
+* Allocating work to nodes
+* Service discovery. Although service discovery does not require consensus, leader election does.
+* Membership services. A membership service determines which nodes are currently active and live members of a cluster.
+
+
