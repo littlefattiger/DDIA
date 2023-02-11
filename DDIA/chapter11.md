@@ -44,6 +44,6 @@ Processing Streams
 
 * Fault Tolerance
   * Microbatching and checkpointing
-  * Atomic commit revisited
+  * Atomic commit revisited-> transaction
   * Idempotence
   * Rebuilding state after a failure
