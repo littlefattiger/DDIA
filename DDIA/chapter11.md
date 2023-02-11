@@ -29,19 +29,20 @@ Processing Streams
   * Stream analytics
   * Maintaining materialized views
   * Search on streams
-*  Reasoning About Time
+* Reasoning About Time
   * Event time versus processing time
   * Types of windows
     * Tumbling window
     * Hopping window
     * Sliding window
     * Session window
-Stream Joins
-* Stream-stream join (window join)
-* Stream-table join (stream enrichment)
-* Table-table join (materialized view maintenance)
-Fault Tolerance
-* Microbatching and checkpointing
-* Atomic commit revisited
-* Idempotence
-* Rebuilding state after a failure
+
+* Stream Joins
+  * Stream-stream join (window join)
+  * Stream-table join (stream enrichment)
+  * Table-table join (materialized view maintenance)
+*Fault Tolerance
+  * Microbatching and checkpointing
+  * Atomic commit revisited
+  * Idempotence
+  * Rebuilding state after a failure
