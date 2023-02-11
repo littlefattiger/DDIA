@@ -41,7 +41,8 @@ Processing Streams
   * Stream-stream join (window join)
   * Stream-table join (stream enrichment)
   * Table-table join (materialized view maintenance)
-*Fault Tolerance
+
+* Fault Tolerance
   * Microbatching and checkpointing
   * Atomic commit revisited
   * Idempotence
