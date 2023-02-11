@@ -20,13 +20,22 @@ Partitioned Logs
 Databases and Streams
 * CDC(change data capture) -> update database -> update search index
 * [Event Sourcing](https://zhuanlan.zhihu.com/p/38968012)
-* Think about the immutuable log and final state.
-* This idea is sometimes known as command query responsibility segregation (CQRS)
-* The traditional approach to database and schema design is based on the fallacy that data must be written in the same form as it will be queried.
-* What remains is to discuss what you can do with the stream once you have it— namely, you can process it. Broadly, there are three options:
-  1. You can take the data in the events and write it to a database, cache, search index, or similar storage system, from where it can then be queried by other clients.
-  2. You can push the events to users in some way, for example by sending email alerts or push notifications, or by streaming the events to a real-time dashboard where they are visualized. 
-  3. You can process one or more input streams to produce one or more output streams. Streams may go through a pipeline consisting of several such processing stages before they eventually end up at an output (option 1 or 2).   
+* discussion about state, steam and Immutability
+
+
+Processing Streams
+* Uses of Stream Processing
+  * Complex event processing
+  * Stream analytics
+  * Maintaining materialized views
+  * Search on streams
+*  Reasoning About Time
+  * Event time versus processing time
+  * Types of windows
+    * Tumbling window
+    * Hopping window
+    * Sliding window
+    * Session window
 Stream Joins
 * Stream-stream join (window join)
 * Stream-table join (stream enrichment)
