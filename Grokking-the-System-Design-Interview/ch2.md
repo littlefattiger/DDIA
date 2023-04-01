@@ -58,7 +58,7 @@
     -  as soon as KGS loads some keys in memory, it can move them to the used keys table.
     -  Maybe we can just use a tag(bool)?
     -  one byte to store one alpha-numeric character
-    -  6 (characters per key) * 68.7B (unique keys) = 412 GB.
+    -  key-DB: 6 (characters per key) * 68.7B (unique keys) = 412 GB.
     -  Isn’t KGS a single point of failure? Yes, it is. To solve this, we can have a standby replica of KGS.
     -  We had a Key-DB to store all keys, then we can have a write lock to prevent two user get same keys, because we will write this key into the database
     -  Should we impose size limits on custom aliases?
@@ -100,5 +100,6 @@
 - Summary
   - The Key-DB is only serve as generate key, we will get generated key from it
   - Database Server there is to serve the real input key and output link, use or not uses, and some permission there.
+  - We can have two tables in databases; one store used key and another one un used key; if we have only one table there, maybe there is concurrency issue;
 
 
