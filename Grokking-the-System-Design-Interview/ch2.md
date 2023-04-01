@@ -101,3 +101,4 @@
   - The Key-DB is only serve as generate key, we will get generated key from it
   - Database Server there is to serve the real input key and output link, use or not uses, and some permission there.
   - We can have two tables in databases; one store used key and another one un used key; if we have only one table there, maybe there is concurrency issue; Read from one, and write to another one. To avoid concurrency in this way.
+  - I think we can use only one table; We pull key from keyDB, and whenever there is record in database, we pull a new one. And our cleanup service can clean the DynamoDB daily;
