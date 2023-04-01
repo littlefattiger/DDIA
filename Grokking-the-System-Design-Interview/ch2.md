@@ -100,6 +100,6 @@
 - Summary
   - The Key-DB is only serve as generate key, we will get generated key from it
   - Database Server there is to serve the real input key and output link, use or not uses, and some permission there.
-  - We can have two tables in databases; one store used key and another one un used key; if we have only one table there, maybe there is concurrency issue;
+  - We can have two tables in databases; one store used key and another one un used key; if we have only one table there, maybe there is concurrency issue; Read from one, and write to another one. To avoid concurrency in this way.
 
 
