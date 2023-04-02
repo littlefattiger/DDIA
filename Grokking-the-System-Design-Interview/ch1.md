@@ -31,6 +31,3 @@
   - Do we have enough replicas of the data so that if we lose a few servers we can still serve our users?
   - Similarly, do we have enough copies of different services running such that a few failures will not cause total system shutdown?
   - How are we monitoring the performance of our service? Do we get alerts whenever critical components fail or their performance degrades?
-
-
-
