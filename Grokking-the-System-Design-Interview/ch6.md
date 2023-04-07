@@ -1,5 +1,5 @@
 ## Designing Facebook Messenger
-- Requirements and Goals of the System
+- #### Requirements and Goals of the System
   - Functional Requirements
     - Messenger should support one-on-one conversations between users
     - Messenger should keep track of the online/offline statuses of its users.
@@ -19,7 +19,7 @@
     - The server **stores the message in its database** and sends the message to User B
     - User-B receives the message and sends the acknowledgment to the server.
     - The server notifies User-A that the message has been delivered successfully to User-B.
-- Detailed Component Design
+- #### Detailed Component Design
   - Receive incoming messages and deliver outgoing messages
   - Store and retrieve messages from the database
   - Keep a record of which user is online or has gone offline, and notify all the relevant users about these status changes.
@@ -39,14 +39,14 @@
        -   Send the message to the receiver
        -   Send an acknowledgment to the sender
        -   The chat server will first find the server that holds the connection for the receiver and pass the message to that server to send it to the receiver. The chat server can then send the acknowledgment to the sender; we don’t need to wait for storing the message in the database
- -  Storing and retrieving the messages from the database
+ -  #### Storing and retrieving the messages from the database
     - Start a separate thread, which will work with the database to store the message
     - Send an asynchronous request to the database to store the message.
     - Which storage system we should use?
       - We cannot use RDBMS like MySQL or NoSQL like MongoDB because we cannot afford to read/write a row from the database every time a user receives/sends a message
       - Both of our requirements can be easily met with a wide-column database solution like **HBase**.
       - HBase is a column-oriented key-value NoSQL database that can store multiple values against one key into multiple columns. 
-  - Managing user’s status
+  - #### Managing user’s status
     - if we do push, it is a lot. For example, 500M users, you need to notify all
     - Whenever a client starts the app, it can pull the current status of all users in their friends’ list.
     - Whenever a user sends a message to another user that has gone offline, we can send a failure to the sender and update the status on the client.
@@ -55,18 +55,18 @@
     - In sum, lazy updating
     - ![Image](./images/ch6-5.png)
     - Design Summary: Clients will open a connection to the chat server to send a message; the server will then pass it to the requested user. All the active users will keep a connection open with the server to receive messages. Whenever a new message arrives, the chat server will push it to the receiving user on the **long poll request**. Messages can be stored in **HBase**, which supports quick small updates, and range based searches. The servers can broadcast the online status of a user to other relevant users. Clients can pull status updates for users who are visible in the client’s viewport on a less frequent basis.
-- Data partitioning
+- #### Data partitioning
   - Partitioning based on UserID: good idea
   - Partitioning based on MessageID: If we store different messages of a user on separate database shards, fetching a range of messages of a chat would be very slow
-- Cache
+- #### Cache
   - We can cache a few recent messages (say last 15) in a few recent conversations that are visible in a user’s viewport
--  Load balancing
+- #### Load balancing
    -  chat servers
    -  cache servers
--  Fault tolerance and Replication
+- #### Fault tolerance and Replication
    -  What will happen when a chat server fails? an easier approach can be to have clients automatically reconnect if the connection is lost. No transfer, it is hard
    -  Should we store multiple copies of user messages? Yes
--  Extended Requirements
+- #### Extended Requirements
    -  Group chat
       -  based on GroupChatID, iterate through all the users of the chat to find the server handling the connection of each user to deliver the message
       -  we can store all the group chats in a separate table partitioned based on GroupChatID

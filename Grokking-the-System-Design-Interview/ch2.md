@@ -62,10 +62,10 @@
     -  Isn’t KGS a single point of failure? Yes, it is. To solve this, we can have a standby replica of KGS.
     -  We had a Key-DB to store all keys, then we can have a write lock to prevent two user get same keys, because we will write this key into the database
     -  Should we impose size limits on custom aliases?
-- Data Partitioning and Replication
+- #### Data Partitioning and Replication
   - Range Based Partitioning
   - Hash-Based Partitioning
-- Cache
+- #### Cache
   - We can cache URLs that are frequently accessed.
   - Memcache
   - How much cache should we have? 20% of daily traffic
@@ -75,7 +75,7 @@
   - ![Image](./images/ch2-8.png)
 
 
-- Load Balancer (LB)
+- #### Load Balancer (LB)
   - Between Clients and Application servers
   - Between Application Servers and database servers
   - Between Application Servers and Cache servers
@@ -83,21 +83,21 @@
     - easy and simple
     - Another benefit of this approach is that if a server is dead, LB will take it out of the rotation and will stop sending any traffic to it
     - A problem with Round Robin LB is that server load is not taken into consideration.
-- Purging or DB cleanup
+- #### Purging or DB cleanup
   -  we can slowly remove expired links and do a lazy cleanup. Our service will make sure that only expired links will be deleted, although some expired links can live longer but will never be returned to users.
      -  Whenever a user tries to access an expired link, we can delete the link and return an error to the user.
      -  A separate Cleanup service can run periodically to remove expired links from our storage and cache.
      -  We can have a default expiration time for each link (e.g., two years).
      -  After removing an expired link, we can put the key back in the key-DB to be reused.
      -  ![Image](./images/ch2-10.png)
--  Telemetry
+-  #### Telemetry
    -  Some statistics worth tracking: country of the visitor, date and time of access, web page that refers the click, browser, or platform from where the page was accessed.
-- Security and Permissions
+- #### Security and Permissions
   - We can store permission level (public/private) with each URL in the database. 
   - If a user does not have permission and tries to access a URL, we can send an error (HTTP 401) back.
   - The columns will store the UserIDs of those users that have permissions to see the URL
 
-- Summary
+- #### Summary
   - The Key-DB is only serve as generate key, we will get generated key from it
   - Database Server there is to serve the real input key and output link, use or not uses, and some permission there.
   - We can have two tables in databases; one store used key and another one un used key; if we have only one table there, maybe there is concurrency issue; Read from one, and write to another one. To avoid concurrency in this way.
